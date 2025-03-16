@@ -1,22 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" type="css/styles" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yatra Ko Sathi</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/javascript/script.js" defer></script>
 </head>
+
 <body>
-  <header>
-    <button></button>
-      <a href="#home">Home</a>
-    <a href="#map">Map</a>
-    <a href="#routes">Routes</a>
-    
-    
-    
-    
-    
-  </header>
+    <header>
+        <div class="container">
+            <h1>Yatra Ko Sathi <img src="/Images/OIP (1).jpeg" class="image" alt="Description of the image"></h1>
+
+        </div>
+        <div class="container">
+            <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="#" class="active">Map</a></li>
+                    <li><a href="#">Routes</a></li>
+                    <li><a href="#">Schedules</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <!-- <bdy>
+        <div class="search-box">
+            <form>
+                <input type="text" placeholder="Search...">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+
+            <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+            
+        </div>
+       <div class="map">
+        <img src="Images/image.png" class="map"alt="Live Map">
+
+       </div>
+    </bdy> -->
+
+    <main class="container">
+        <section class="sidebar">
+            <div class="search-box">
+                <form>
+                    <input type="text" placeholder="Search for routes...">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            <div class="route-info">
+                <h2>Route Information</h2>
+                <p><strong>From:</strong> <span id="from">Tokha</span></p>
+                <p><strong>To:</strong> <span id="to">RNAC</span></p>
+                <p><strong>Estimated Time:</strong> <span id="time">45 mins</span></p>
+            </div>
+            <div class="route-info">
+                <h2>Route Information</h2>
+                <p><strong>From:</strong> <span id="from">Sangla</span></p>
+                <p><strong>To:</strong> <span id="to">RNAC</span></p>
+                <p><strong>Estimated Time:</strong> <span id="time">55 mins</span></p>
+            </div>
+        </section>
+        <section class="map container">
+            <img src="Images/image.png" class="map" alt="Live Map">
+        </section>
+    </main>
 </body>
 </html>
