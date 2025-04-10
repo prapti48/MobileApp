@@ -11,7 +11,7 @@ $(document).ready(function() {
     // Add active class to header on scroll
     $(window).scroll(function() {
         if ($(this).scrollTop() > 50) {
-            $('.header').css('background-color', 'rgba(5, 97, 100, 0.95)');
+            $('.header').css('background-color', 'rgba(11, 36, 92, 0.95)');
         } else {
             $('.header').css('background-color', '#ffffff');
         }

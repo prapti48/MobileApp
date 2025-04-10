@@ -13,7 +13,7 @@
         }
         
         .header {
-            background-color: #ffffff;
+            background-color: white;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             padding: 10px 15px;
             position: fixed;
