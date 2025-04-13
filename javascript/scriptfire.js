@@ -133,7 +133,7 @@ signupForm.addEventListener("submit", function (e) {
   })
     .then(() => {
       message.textContent = "Sign up successful!";
-      message.style.color = "green";
+      message.style.color = "blue";
       signupForm.reset();
     })
     .catch((error) => {
