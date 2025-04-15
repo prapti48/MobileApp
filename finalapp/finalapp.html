@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yatra Ko Sathi</title>
+    <link rel="stylesheet" href="/finalapp/final.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="/finalapp/final.js"></script>
+    
+</head>
+<body>
+    <!-- Header with app name, logo and burger menu -->
+    <div class="header">
+        <div class="menu-btn" id="menuBtn"><img src="/Images/OIP (1).jpeg" class="applogo"></div>
+        <div class="app-name">Yatra Ko Sathi</div>
+        <div class="profile-logo">
+          <i class="bi bi-person-circle"></i>
+        </div>
+    </div>
+
+    <!-- Side menu (burger menu) -->
+    <div class="side-menu" id="sideMenu">
+        <div class="menu-header">Yatra Ko Sathi</div>
+        <div class="menu-items">
+            <div class="menu-item tab-link" data-tab="home">
+              <i class="bi bi-house-door"></i> Home
+            </div>
+            <div class="menu-item tab-link" data-tab="routes">
+              <i class="bi bi-bus-front"></i> Routes
+            </div>
+            <div class="menu-item tab-link" data-tab="livemap">
+              <i class="bi bi-geo-alt"></i> Live Map
+            </div>
+            <div class="menu-item">
+                <i class="bi bi-gear"></i>Settings
+            </div>
+            <div class="menu-item">
+              <i class="bi bi-exclamation-circle"></i> About
+            </div>
+        </div>
+    </div>
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <!-- Main content area with tabs -->
+    <div class="main-content">
+        <!-- Home tab -->
+        <div class="tab-content active" id="homeTab">
+            <div class="bus-image">
+                <img src="/Images/route-planning-vector-concept-2A4XNE6.jpg" alt="Bus Image">
+            </div>
+            
+            <div class="search-container">
+                <input type="text" class="search-bar" placeholder="Search for routes...">
+                <span class="search-icon"><i class="bi bi-search"></i></span>
+            </div>
+            
+            <div class="route-card">
+                <div class="route-title">RNAC - Balaju </div>
+                <div class="route-details">Departure: 6:00 AM • Arrival: 6.20 AM</div>
+                
+                <div class="route-stops">
+                    <div class="stop" style="position: relative;">
+                        <div class="stop-dot"></div>
+                        <div class="stop-line"></div>
+                        <div class="stop-name">Kathmandu Bus Terminal</div>
+                    </div>
+                    <div class="stop" style="position: relative;">
+                        <div class="stop-dot"></div>
+                        <div class="stop-line"></div>
+                        <div class="stop-name">Jamal</div>
+                    </div>
+                    <div class="stop" style="position: relative;">
+                        <div class="stop-dot"></div>
+                        <div class="stop-line"></div>
+                        <div class="stop-name">Lainchour</div>
+                    </div>
+                    <div class="stop" style="position: relative;">
+                        <div class="stop-dot"></div>
+                        <div class="stop-line"></div>
+                        <div class="stop-name">Thamel</div>
+                    </div>
+                    <div class="stop">
+                        <div class="stop-dot"></div>
+                        <div class="stop-name">Sorhakhutte</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Routes tab -->
+        <div class="tab-content" id="routesTab">
+            <div class="search-container">
+                <input type="text" class="search-bar" placeholder="Search routes...">
+                <span class="search-icon"><i class="bi bi-search"></i></span>
+            </div>
+            
+            <ul class="routes-list">
+                <li class="route-item">
+                    <span class="route-number">A1</span>
+                    <span>RNAC-Tokha</span>
+                </li>
+                <li class="route-item">
+                    <span class="route-number">B2</span>
+                    <span>RNAC-Sangla</span>
+                </li>
+                <li class="route-item">
+                    <span class="route-number">C3</span>
+                    <span>Jitpurphedi-RNAC</span>
+                </li>
+                <li class="route-item">
+                    <span class="route-number">D4</span>
+                    <span>Kabresthali-Teaching Hospital</span>
+                </li>
+                <li class="route-item">
+                    <span class="route-number">E5</span>
+                    <span>Machhapokhari-Kalimati</span>
+                </li>
+            </ul>
+        </div>
+        
+        <!-- Live Map tab -->
+        <div class="tab-content" id="livemapTab">
+            <div class="map-container">
+                <div>
+                    <div style="text-align: center; margin-bottom: 20px;"><i class="bi bi-geo-alt"></i></div>
+                    <div>
+                      <img src="/Images/image.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom navigation bar -->
+    <div class="bottom-nav">
+        <div class="nav-item active tab-link" data-tab="home">
+            <div class="nav-icon"><i class="bi bi-house-door"></i></div>
+            <div class="nav-text">Home</div>
+        </div>
+        <div class="nav-item tab-link" data-tab="routes">
+            <div class="nav-icon"><i class="bi bi-bus-front"></i> </div>
+            <div class="nav-text">Routes</div>
+        </div>
+        <div class="nav-item tab-link" data-tab="livemap">
+            <div class="nav-icon"><i class="bi bi-geo-alt"></i></div>
+            <div class="nav-text">Live Map</div>
+        </div>
+    </div>
+
+    
+</body>
+</html>

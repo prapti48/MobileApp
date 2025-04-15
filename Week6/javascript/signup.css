@@ -31,13 +31,13 @@ body {
 }
 .logo h1 {
   font-size: 1.5rem;
-  color: #070d58;
+  color: #1d29db;
   font-weight: 700;
 }
 
 h2 {
   text-align: center;
-  color: blue;
+  color: rgb(27, 27, 248);
 }
 
 form {
@@ -54,7 +54,7 @@ input {
 }
 
 button {
-  background-color:rgb(9, 9, 235);
+  background-color:rgb(34, 34, 255);
   color: white;
   padding: 12px;
   border: none;
@@ -74,7 +74,7 @@ button:hover {
 }
 
 .login-link a {
-  color: rgb(5, 5, 187);
+  color: rgb(52, 52, 240);
   text-decoration: none;
 }
 
